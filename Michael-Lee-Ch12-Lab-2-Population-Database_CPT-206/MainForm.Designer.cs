@@ -385,7 +385,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(551, 370);
             this.panel1.TabIndex = 12;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lowestPopulationResultLabel
             // 
@@ -402,7 +401,6 @@
             this.highestPopulationResultLabel.Size = new System.Drawing.Size(312, 26);
             this.highestPopulationResultLabel.TabIndex = 14;
             this.highestPopulationResultLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.highestPopulationResultLabel.Click += new System.EventHandler(this.highestPopulationResultLabel_Click);
             // 
             // averagePopulationResultLabel
             // 
@@ -411,7 +409,6 @@
             this.averagePopulationResultLabel.Size = new System.Drawing.Size(254, 26);
             this.averagePopulationResultLabel.TabIndex = 13;
             this.averagePopulationResultLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.averagePopulationResultLabel.Click += new System.EventHandler(this.averagePopulationResultLabel_Click);
             // 
             // totalPopulationResultLabel
             // 
@@ -420,7 +417,6 @@
             this.totalPopulationResultLabel.Size = new System.Drawing.Size(294, 26);
             this.totalPopulationResultLabel.TabIndex = 12;
             this.totalPopulationResultLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.totalPopulationResultLabel.Click += new System.EventHandler(this.totalPopulationResultLabel_Click);
             // 
             // panel2
             // 

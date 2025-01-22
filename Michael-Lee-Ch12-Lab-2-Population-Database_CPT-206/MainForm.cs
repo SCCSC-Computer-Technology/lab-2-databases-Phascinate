@@ -42,11 +42,6 @@ namespace Michael_Lee_Ch12_Lab_2_Population_Database_CPT_206
 
         }
 
-        private void CustomDeleteHandler(object sender, EventArgs e)
-        {
-            MessageBox.Show("Hello world!"); // This should be the only action
-        }
-
         public void RefreshData()
         {
             this.cityTableAdapter.Fill(this.cityDBDataSet.City);
@@ -211,6 +206,8 @@ namespace Michael_Lee_Ch12_Lab_2_Population_Database_CPT_206
                     int rowsAffected = cmd.ExecuteNonQuery();
                     conn.Close();
 
+                    RefreshData();
+
                     if (rowsAffected < 0)
                     {
                         MessageBox.Show("Update failed. Check if the CityID exists.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -276,24 +273,5 @@ namespace Michael_Lee_Ch12_Lab_2_Population_Database_CPT_206
             cityDataGridView.DataSource = dataView;
         }
 
-        private void highestPopulationResultLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void averagePopulationResultLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void totalPopulationResultLabel_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
