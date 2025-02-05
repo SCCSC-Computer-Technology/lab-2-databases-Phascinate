@@ -1,0 +1,2 @@
+the code that you made is well organized and clean with good comments. The code used the sqlcommand class to execute the sql queries instead of creating the queries and then calling them with the this.tbladatpter to call the queries i find this 
+interesting and should look into it more to see what else it can do or if its better to use that. 
